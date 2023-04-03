@@ -77,7 +77,15 @@
 
     .video-box {
         display: block;
-        height: 260px;
+        height: 420px;
+    }
+
+    .mar-t-160 {
+        margin-top: 160px;
+    }
+
+    .content-item {
+        width: 100%;
     }
 }
 
@@ -86,4 +94,11 @@
         font-size: 26px;
     }
 
+    .video-box {
+        height: 188px;
+    }
+
+    .mar-t-0 {
+        margin-top: 0;
+    }
 }
