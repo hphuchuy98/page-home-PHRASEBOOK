@@ -87,6 +87,29 @@
     .content-item {
         width: 100%;
     }
+
+    .footer__item {
+        display: block;
+    }
+
+    .page-section {
+        padding: 0 30px;
+    }
+
+    .footer {
+        padding: 45px 30px;
+    }
+
+    .footer__item-link {
+        margin-top: 50px;
+    }
+}
+
+@media (min-width:500px) and (max-width:1009px) {
+    .video-box {
+        display: block;
+        height: 420px;
+    }
 }
 
 @media screen and (max-width: 760px) {
