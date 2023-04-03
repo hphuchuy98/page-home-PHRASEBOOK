@@ -7,6 +7,7 @@
     --color-blue-light-2: #238CE7;
     --color-blue-light-3: #BDDBFA;
     --color-blue-light-4: #E4F1FD;
+    --color-blue-light-5: #1372D3;
     --color-blue-dark-1: #223C58;
     --color-blue-dark-2: #204147;
     --color-orange: #FF9900;
@@ -29,6 +30,10 @@
     color: var(--color-blue-light-1) !important;
 }
 
+.mar-0 {
+    margin-bottom: 0;
+}
+
 
 /* media */
 @media (max-width: 1209px) {
@@ -38,7 +43,7 @@
 }
 
 
-@media (max-width: 1070px) {
+@media screen and (max-width: 1070px) {
     .header {
         padding: 20px 20px;
         height: 94px;
@@ -48,9 +53,11 @@
         height: 100%;
         object-fit: cover;
     }
+    
+
 }
 
-@media (max-width: 1010px) {
+@media screen and (max-width: 1010px) {
     .checkbtn {
         display: block;
         color: var(--color-blue-light-1);
@@ -59,4 +66,24 @@
     .menu-desk-horizontal {
         display: none;
     }
+
+    .theme-item__text h1 {
+        font-size: 46px;
+    }
+
+    .theme-btn {
+        display: none;
+    }
+
+    .video-box {
+        display: block;
+        height: 260px;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .theme-item__text h1 {
+        font-size: 26px;
+    }
+
 }
