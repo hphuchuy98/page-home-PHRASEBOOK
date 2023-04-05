@@ -571,10 +571,34 @@
     color: rgb(106, 107, 108);
 }
 
+.content-item__container-text-price {
+    width: 100%;
+    padding: 20px 0 10px;
+}
+
+.content-item__container-text-price p {
+    font-size: 16px;
+    color: var(--color-black);
+    font-family: Mulish, sans-serif;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: normal;
+}
+
+.content-item__container-text-price .price-before {
+    text-decoration: line-through;
+    font-weight: 600;
+    color: rgb(214, 0, 0);
+}
+
+.content-item__container-text-price .price-after {
+    color: var(--color-blue-light-6);
+}
+
 .content-item__under {
     width: 100%;
-    min-height: 80px;
-    padding: 0 14px 16px 14px;
+    min-height: auto;
+    padding: 0 14px 20px 14px;
     display: flex;
     align-items: center;
     background-color: var(--color-white);
@@ -632,6 +656,66 @@ a.under-box__button-link {
     width: 100%;
     height: 100%;
     fill: var(--color-blue-light-5);
+}
+
+.content-item__under-learn {
+    width: 164px;
+    height: 48px;
+    background: var(--color-blue-light-7);
+    border-top-left-radius: 24px;
+    border-bottom-left-radius: 24px;    
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.content-item__under-learn a{
+    width: 100%;
+    height: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+a.under-learn__button-link {
+    -webkit-align-items: center;
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+    line-height: 1.2em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.under-learn__button-link .button-link-learn__icon {
+    width: 40px;
+    height: 40px;
+    background-color: var(--color-white);
+    border-radius: 50%;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.button-link-learn__icon-box {
+    max-width: 100%;
+    max-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-link-learn__icon-box svg {
+    width: 30%;
+    fill: var(--color-blue-light-7);
+}
+
+.content-item__under-learn .button-link__text {
+    color: var(--color-white);
+    font-size: 10px;
+    text-transform: uppercase;
+    padding-right: 16px;
 }
 
 /* page */
