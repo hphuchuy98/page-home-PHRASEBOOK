@@ -34,6 +34,10 @@
     color: var(--color-blue-light-1) !important;
 }
 
+.active-hover {
+    background-color: var(--color-blue-light-1) !important;
+}
+
 .mar-0 {
     margin-bottom: 0;
 }

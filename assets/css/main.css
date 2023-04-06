@@ -58,11 +58,37 @@
     cursor: pointer;
 }
 
-
-
-.menu-item a {
+.menu-item a.hover-un {
     color: var(--color-black);
     font-family: 'Roboto', sans-serif;
+    /* background-color: palegreen; */
+    padding: 10px 0;
+}
+
+.menu-item-link span.line-hover {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    bottom: 0px;
+    left: 0;
+    padding: 0 10px;
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.menu-item-link span.line-hover span {
+    width: 65%;
+    height: 100%;
+    background-color: var(--color-black);
+    display: none;
+
+}
+
+.menu-item:hover .menu-item-link span.line-hover span{
+    display: block;
 }
 
 .menu-item .menu-icon {
@@ -72,9 +98,10 @@
 .sub-menu {
     position: absolute;
     left: 0;
-    top: 44px;
+    top: 52px;
     line-height: 1.6;
     background-color: var(--color-white);
+    /* background-color: pink; */
     min-width: fit-content;  
     padding: 6px 12px;
     border-radius: 4px;
@@ -98,6 +125,7 @@
     overflow: hidden;
     text-overflow: ellipsis;
     /* text-transform: uppercase; */
+    color: var(--color-black);
 }
 
 .sub-menu a:hover {
@@ -165,7 +193,33 @@
 }
 
 .menu-phone-item-link {
+    position: relative;
     cursor: pointer;
+}
+
+.menu-phone-item-link span.line-hover {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    bottom: 0px;
+    left: 0;
+    padding: 0 10px;
+    display: flex;
+    justify-content: center;
+    /* background-color: palegreen; */
+}
+
+.menu-phone-item-link span.line-hover span {
+    width: 65%;
+    height: 100%;
+    background-color: var(--color-black);
+    display: none;
+
+}
+
+.menu-phone-item:hover .menu-phone-item-link span.line-hover span{
+    display: block;
 }
 
 .menu-phone-horizontal li .sub-menu-phone {
