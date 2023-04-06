@@ -10,6 +10,8 @@
     --color-blue-light-5: #1372D3;
     --color-blue-light-6: #508bcf;
     --color-blue-light-7: #328CE7;
+    --color-blue-light-8: #4295e9;
+    --color-blue-light-9: #7fcafb;
     --color-blue-dark-1: #223C58;
     --color-blue-dark-2: #204147;
     --color-orange: #FF9900;
@@ -34,6 +36,10 @@
 
 .mar-0 {
     margin-bottom: 0;
+}
+
+.rotate{
+    transform: rotate(180deg);
 }
 
 
@@ -127,3 +133,4 @@
         margin-top: 0;
     }
 }
+
