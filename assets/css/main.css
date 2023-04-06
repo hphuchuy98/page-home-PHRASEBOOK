@@ -121,10 +121,12 @@
     justify-content: center;
     align-items: center;
     display: none;
+    transition: 0.3s ease;
 }
 
 .menu-phone-item .show-menu{
     display: block;
+    transition: 0.3s ease;
 }
 
 .sub-menu-phone li {
@@ -185,6 +187,8 @@
 
 .menu-phone-item i.menu-phone-icon {
     float: right;
+    transition: 0.3s ease;
+
 }
 
 .menu-phone-wrapper {

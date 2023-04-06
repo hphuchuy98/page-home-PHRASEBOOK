@@ -1,7 +1,7 @@
 const arrows = document.querySelectorAll(".arrow")
 const showSubMenu = document.querySelector('.sub-menu-phone')
 const addRotate = document.querySelector('.menu-phone-icon')
-const hideSubMenu = document.querySelector('.menu-text')
+const hideSubMenus = document.querySelectorAll('.menu-text')
 
 
 function show_Submenu () {
@@ -27,7 +27,10 @@ for (const arrow of arrows ) {
     arrow.addEventListener('click', add_Rotate);
 }
 
-hideSubMenu.addEventListener('click', hide_Submenu);
-hideSubMenu.addEventListener('click', remove_Rotate);
+
+for (const hideSubMenu of hideSubMenus ) {
+    hideSubMenu.addEventListener('click', hide_Submenu);
+    hideSubMenu.addEventListener('click', remove_Rotate);
+}
 
 
