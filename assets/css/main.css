@@ -97,7 +97,7 @@
     font-family: "Roboto Condensed";
     overflow: hidden;
     text-overflow: ellipsis;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
 }
 
 .sub-menu a:hover {
@@ -168,15 +168,19 @@
     cursor: pointer;
 }
 
-.menu-phone-item .sub-menu-phone {
+.menu-phone-horizontal li .sub-menu-phone {
     padding: 10px 0;
     justify-content: center;
     align-items: center;
+    transition: all 0.3s ease;
     display: none;
-    transition: 0.3s ease;
 }
 
-.menu-phone-item .show-menu{
+.menu-phone-horizontal li.show-menu i.arrow {
+    transform: rotate(-180deg);
+}
+
+.menu-phone-horizontal li.show-menu .sub-menu-phone{
     display: block;
     transition: 0.3s ease;
 }
@@ -193,6 +197,10 @@
 .sub-menu-phone li a {
     font-family: inherit;
     letter-spacing: initial;
+}
+
+.sub-menu-phone li:hover a {
+    color: var(--color-blue-light-1);
 }
 
 .sub-menu-phone span {
